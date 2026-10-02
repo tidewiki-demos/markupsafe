@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "commit": "b8ed616eb769578eac1bfb0eb42316be5a39e16b",
+  "language": "en",
+  "updated_at": "2026-10-02T12:33:51Z",
+  "pages": {
+    "ci-and-release": {
+      "title": "CI and Release Workflow",
+      "summary": "Automated testing, publishing, and deployment workflows that build, test, and release MarkupSafe to PyPI.",
+      "files": [
+        ".github/workflows/lock.yaml",
+        ".github/workflows/pre-commit.yaml",
+        ".github/workflows/publish.yaml",
+        ".github/workflows/tests.yaml"
+      ],
+      "commit": "b8ed616eb769578eac1bfb0eb42316be5a39e16b",
+      "hash": "fb7e89b0cfaee2f05e71e1f2a59dc599c2c7626c3ee03162ed4d9f0dd5538a66"
+    },
+    "development-setup": {
+      "title": "Development Environment",
+      "summary": "Tools and configuration for setting up local development environments and maintaining code quality standards.",
+      "files": [
+        ".devcontainer/devcontainer.json",
+        ".devcontainer/on-create-command.sh",
+        ".editorconfig",
+        ".github/ISSUE_TEMPLATE/bug-report.md",
+        ".github/ISSUE_TEMPLATE/config.yml",
+        ".github/ISSUE_TEMPLATE/feature-request.md",
+        ".github/pull_request_template.md",
+        ".gitignore",
+        ".pre-commit-config.yaml"
+      ],
+      "commit": "b8ed616eb769578eac1bfb0eb42316be5a39e16b",
+      "hash": "905c45a988486149410d3a40f1f8936540ab9fe1572605319fd48bd552b64825"
+    },
+    "documentation": {
+      "title": "Documentation",
+      "summary": "Sphinx documentation configuration and build system that produces user guides and API documentation for MarkupSafe.",
+      "files": [
+        ".readthedocs.yaml",
+        "docs/Makefile",
+        "docs/changes.rst",
+        "docs/conf.py",
+        "docs/escaping.rst",
+        "docs/formatting.rst",
+        "docs/html.rst",
+        "docs/index.rst",
+        "docs/license.rst",
+        "docs/make.bat"
+      ],
+      "commit": "b8ed616eb769578eac1bfb0eb42316be5a39e16b",
+      "hash": "8d96d9edf9bef67367c9a0b70757557d09da07ac9e68794fce07666a25742aa0"
+    },
+    "escaping": {
+      "title": "Escaping and Safety",
+      "summary": "Functions and mechanisms for escaping special characters to prevent injection attacks, including escape functions and the rationale for different escaping strategies.",
+      "files": [
+        "docs/escaping.rst",
+        "tests/test_escape.py",
+        "tests/test_exception_custom_html.py"
+      ],
+      "commit": "b8ed616eb769578eac1bfb0eb42316be5a39e16b",
+      "hash": "a0058fac3f417511b5bbc6b8588377dad78d18824ca7b64a3269a4f43e96ca3b"
+    },
+    "index": {
+      "title": "Overview",
+      "summary": "Entry point of the wiki.",
+      "files": [
+        "README.md",
+        "pyproject.toml"
+      ],
+      "commit": "b8ed616eb769578eac1bfb0eb42316be5a39e16b",
+      "hash": "2ad01d16b7626bf393aec012222c244c95370ca6a789e791dc7e944419fc61ae"
+    },
+    "markup-class": {
+      "title": "Markup Class",
+      "summary": "The core Markup class that represents HTML-safe text and provides methods for safe string operations with automatic escaping of untrusted input.",
+      "files": [
+        "docs/formatting.rst",
+        "docs/html.rst",
+        "src/markupsafe/__init__.py"
+      ],
+      "commit": "b8ed616eb769578eac1bfb0eb42316be5a39e16b",
+      "hash": "883368fc0ff3d86203d444cb5445375a58a944f27dc579bcd7b0708f8b342b82"
+    },
+    "packaging-and-build": {
+      "title": "Packaging and Build",
+      "summary": "Build configuration, dependencies, and distribution setup for packaging MarkupSafe as a Python library with native extension support.",
+      "files": [
+        "LICENSE.txt",
+        "MANIFEST.in",
+        "pyproject.toml",
+        "setup.py",
+        "src/markupsafe/__init__.py",
+        "src/markupsafe/_native.py",
+        "src/markupsafe/_speedups.c",
+        "src/markupsafe/_speedups.pyi"
+      ],
+      "commit": "b8ed616eb769578eac1bfb0eb42316be5a39e16b",
+      "hash": "003e2469e3fd341c357b799caf3af11df5e29e1dd8b36aa1172fae8f30828bbe"
+    },
+    "speedups": {
+      "title": "Performance Optimizations",
+      "summary": "C extension module that provides optimized implementations of critical escaping functions for better performance with large text operations.",
+      "files": [
+        "src/markupsafe/_native.py",
+        "src/markupsafe/_speedups.c",
+        "src/markupsafe/_speedups.pyi"
+      ],
+      "commit": "b8ed616eb769578eac1bfb0eb42316be5a39e16b",
+      "hash": "a69883ce327eca6d30fb884aef2911fa664a5f6db088dcd377ea84d01c80624a"
+    },
+    "testing": {
+      "title": "Testing and Quality Assurance",
+      "summary": "Test suite covering escaping behavior, memory leaks, Markup functionality, and exception handling to ensure correctness and safety.",
+      "files": [
+        "bench.py",
+        "tests/conftest.py",
+        "tests/test_escape.py",
+        "tests/test_exception_custom_html.py",
+        "tests/test_ext_init.py",
+        "tests/test_leak.py",
+        "tests/test_markupsafe.py"
+      ],
+      "commit": "b8ed616eb769578eac1bfb0eb42316be5a39e16b",
+      "hash": "b8b441ecaab45389a3a4fde55086f5eb0a8657ca3a9a60f7762046b9fdc091a6"
+    }
+  },
+  "unassigned": [
+    "CHANGES.rst"
+  ]
+}
